@@ -149,7 +149,7 @@ body{
 
 .about{
     overflow: hidden;
-    width: auto;
+    width: 83%;
     height: 80%;
     animation: scroll linear forwards;
     transform: translatey(-200px);
@@ -183,7 +183,7 @@ body{
 }
 
 .about > p{
-    padding-top: 50px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -373,7 +373,7 @@ a{
     }
     .about{
         padding: 0px;
-        width: 100%;
+        width: 90%;
     }
     .logo{
         transform: scale(0.9);
