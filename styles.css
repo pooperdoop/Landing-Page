@@ -63,6 +63,39 @@ body{
     background: rgba(20,66,33,1);
 }
 
+h3{
+    font-size: clamp(10px, 3vw, 30px);
+    padding: 10px;
+    text-align: center;
+    color: #C6AA58;
+}
+
+.mechanics{
+    width: 100%;
+    height: auto;
+    background: rgba(20,66,33,1);
+    display: flex;
+    justify-content: center;
+    z-index: 1000000;
+}
+
+.mechanicSection{
+    margin-bottom: 100px;
+    display: flex;
+}
+
+.mechanicGif{
+    width: 70%;
+    border-radius: 15px;
+}
+
+.miniMechanicSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
 .section2{
     border-radius: 100px;
     border: #000 10px solid;
@@ -167,6 +200,7 @@ body{
 }
 
 .h1Div{
+    height: auto;
     overflow: hidden;
     animation: scroll linear forwards;
     transform: translatey(-200px);
@@ -181,6 +215,11 @@ body{
     color: #C6AA58;
     font-size: 30px; 
 }
+
+h1{
+    font-size:  clamp(15px, 6vw, 50px);
+}
+
 
 .about > p{
     padding-top: 20px;
@@ -402,3 +441,22 @@ a{
 
 
   }
+
+@media only screen and (max-width: 425px) {
+    .mechanicSection{
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .miniMechanicSection{
+        width: 100%;
+    }
+    .switch:nth-child(1){
+        transform: translatey(150%);
+    }
+    .switch:nth-child(2){
+        transform: translatey(-65%);
+    }
+}
